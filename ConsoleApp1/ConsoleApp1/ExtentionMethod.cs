@@ -15,8 +15,14 @@ namespace ConsoleApp1
         /// <returns></returns>
         public static bool IsNullOrEmpty(this string inputString)
         {
-            bool result = String.IsNullOrEmpty(inputString);
-            return result;
+            if (inputString != null)
+            {
+                return (inputString.Length == 0);
+            }
+            return true;
+
+            //Using standard string .NET framework method
+            //return String.IsNullOrEmpty(inputString);
         }
     }
 }
