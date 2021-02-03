@@ -26,5 +26,17 @@ namespace UnitTestProject1
         {
             Assert.IsFalse("a".IsNullOrEmpty());
         }
+
+        [TestMethod]
+        public void TestMethod04()
+        {
+            Assert.IsTrue("".IsNullOrEmpty());
+        }
+
+        [TestMethod]
+        public void TestMethod05()
+        {
+            Assert.IsFalse("null".IsNullOrEmpty());
+        }
     }
 }
