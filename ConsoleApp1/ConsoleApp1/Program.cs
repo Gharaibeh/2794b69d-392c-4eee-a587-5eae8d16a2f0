@@ -10,6 +10,8 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("The result of RoyalWins is ".IsNullOrEmpty());
+            Console.ReadLine();
         }
     }
 }
